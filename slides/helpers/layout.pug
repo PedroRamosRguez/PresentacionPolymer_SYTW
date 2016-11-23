@@ -1,0 +1,35 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    title #{title}
+
+    meta(name='description' content='Polymer y el cambio de HTML')
+    meta(name='author' content='Pedro Ramos')
+
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    link(rel='stylesheet' href='css/reveal.css')
+    link(rel='stylesheet' href='css/theme/night.css')
+
+    link(rel='stylesheet' href='lib/css/zenburn.css')
+    style.
+      pre.hljs.term {overflow:hidden !important}
+      section[data-run-in-terminal] > div.container {overflow-y: hidden !important}
+
+  body
+    .reveal
+      .slides
+        block content
+    script(src='lib/js/head.min.js')
+    script(src='js/reveal.js')
+    script.
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+          { src: 'plugin/zoom-js/zoom.js', async: true }
+        ]
+      })

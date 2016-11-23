@@ -1,0 +1,30 @@
+section
+	section
+		h2 Shady DOM
+		p El shady DOM es la manera que posee Polymer para manipular el Dom que genera un elemento sin recurrir al Shadow DOM. Para acceder a los elementos del DOM de el elemento creado, sólo basta con acceder mediante la utilización de la sentencia this.
+		pre
+			code this.$.identificador del elemento a acceder
+	section
+		h3 Ejemplo práctico
+		pre
+			code
+				include ../code/shadyDom/shadyDom.html	
+	section
+		p Para acceder al elemento con id specie por ejemplo, habría que áñadir la siguiente sentencia
+		pre
+			code
+				include ../code/shadyDom/shadyDom2.html	
+	section
+		h2 Uso del this.$$
+		p La sentencia this.$ sólo funciona cuando el nodo está incluido dentro del template del elemento creado.
+		p Si se quisiera acceder a un nodo que se cree a posteriori dentro de un función no se podría y habría que utilizar la sentencia 
+		pre
+			code this.$$.(id del nodo)	
+	section
+		h3 Ejemplo práctico
+		pre
+			code
+				include ../code/shadyDom/shadyDom3.html	
+		p En esta ocasión, si se quisiera modificar el nodo que se ha creado, no se podría utilizar this.$ porque daría un error. Para realizar la modificación, se debe utilizar el this.$$
+		pre
+			code 	this.$$("#notes").style.color = "#123456"

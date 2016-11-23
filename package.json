@@ -1,0 +1,27 @@
+{
+  "name": "presentacion-sytw",
+  "version": "1.0.0",
+  "description": "Presentación de SYTW",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "pug": "^2.0.0-beta6",
+    "reveal.js": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0100505078/PresentacionPolymer_STYW.git"
+  },
+  "author": "Pedro Ramos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alu0100505078/PresentacionPolymer_STYW/issues"
+  },
+  "homepage": "https://github.com/alu0100505078/PresentacionPolymer_STYW#readme"
+}

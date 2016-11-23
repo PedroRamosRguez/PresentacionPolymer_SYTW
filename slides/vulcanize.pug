@@ -1,0 +1,45 @@
+section
+	section
+		h2 Vulcanize o vulcanizado	
+		p Cuando un fichero importa gran cantidad de ficheros html el navegador pierde mucho tiempo intentando buscar todos esos ficheros. Para evitar este consumo excesivo, se realiza lo que se conoce como vulcanizado o vulcanize. El vulcanizado consiste en añadir en único fichero todos los html de los elementos que se están importando.
+	section
+		h3 Instalar vulcanize
+		p Para instalar vulcanize, se necesita nodejs y el gestor de paquetes npm
+		pre
+			code npm install -g vulcanize
+		p Para agregar todos los ficheros html de los elementos con sus estilos y sus scripts a un único fichero html, hay que realizar el siguiente comando
+		pre
+			code vulcanize --inline-scripts --inline-css --strip-comments \ elements.html > elements.build.html
+	section
+		h3 Vulcanize y Gulp
+		p Para automatizar todo el proceso de vulcanizado se realiza mediante una tarea gulp.
+		pre
+			code
+				include ../code/vulcanize/vulcanize1.html	
+	section
+		h3 Ejemplo práctico
+		pre
+			code
+				include ../code/vulcanize/vulcanize2.html	
+		section
+			pre
+				code
+					include ../code/vulcanize/vulcanize3.html	
+		section
+				pre
+					code
+						include ../code/vulcanize/vulcanize4.html
+	section
+		h3 Ejemplo práctico
+		pre
+			code
+				include ../code/vulcanize/vulcanize5.html
+		h3 Ejemplo Práctico
+		p resultado del fichero al realizar 
+		pre
+			code vulcanize elements.html -o elements.vulcanized.html
+	section
+		h3 Resultado Final
+		pre
+			code
+				include ../code/vulcanize/vulcanize6.html															

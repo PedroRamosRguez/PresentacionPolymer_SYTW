@@ -1,0 +1,23 @@
+<dom-module id="formulario-registro">
+  <template>
+    <style>
+      /*Añaidr el estilo al componente*/
+    </style>
+    <!--Añadir características del elemento-->
+  </template>
+  <script>
+    Polymer({
+      is: 'formulario-registro',
+      behaviors: [ValidadorBehavior],
+      properties: {
+        name: String,
+        dni: String
+      },
+      saveUser: function() {
+        if(this.esName(this.name) && this.esdni(this.dni)) {
+            //se comprueba el nombre y el DNI/NIE mediante los métodos del behavior
+        }
+      }
+    });
+  </script>
+</dom-module>

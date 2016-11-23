@@ -1,0 +1,19 @@
+section
+	section
+		h2 Bower
+		p Bower es un gestor de paquetes destinado al desarrollo de front-end y que permite instalar paquetes de una manera similar a como se haría en el entorno de desarrolo de NodeJs.
+	section
+		h3 Instalar y usar Bower con Polymer y su kit de principiantes
+			pre
+				code npm install -g bower
+				code bower init 
+				code bower install nombrePaquete
+				code bower install --save nombrePaquete
+				code bower install --save Polymer/polymer
+				code bower install --save PolymerElements/polymer-starter-kit
+	section
+		h4 Bower y Polymer
+		p Para usar componentes externos en nuestro propio componente, es imprescindible usar bower y añadir la siguiente línea en el directorio html donde se cargue
+		pre
+			code <link rel="import" href="../../bower_components/paper-progress/paper-progress.html">
+

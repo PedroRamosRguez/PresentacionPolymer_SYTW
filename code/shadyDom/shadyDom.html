@@ -1,0 +1,19 @@
+<!--starwars.html-->
+<link rel="import" href="bower_components/polymer/polymer.html">
+<dom-module id="star-wars">
+    <template>
+        <article id="main">
+            <h3 id="name">Luke Skywalker</h3>
+            <ul id="description">
+                <li><b>especie:</b> <span id="specie">humana</span></li>
+                <li><b>planeta natal:</b> <span id="homeworld">Tatooine</span></li>
+                <li><b>ocupación:</b> <span id="occupation">maestro jedy</span></li>
+            </ul>
+        </article>
+    </template>
+    <script>
+    Polymer({
+    is: "star-wars"
+    });
+    </script>
+</dom-module>

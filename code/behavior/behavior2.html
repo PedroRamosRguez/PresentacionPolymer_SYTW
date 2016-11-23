@@ -1,0 +1,15 @@
+<script >
+ValidadorBehavior = {
+  esdni: function(dni) {
+    if(dni.length < 9){
+      return false;
+    }
+    return /^[XYZ]?\d{5,8}[A-Z]$/.test(dni);
+  },
+  esName: function(name) {
+    if(name.length <= 1 || name.length > 100)
+      return false;
+    return true;
+  }
+};
+</script>

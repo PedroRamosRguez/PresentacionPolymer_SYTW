@@ -9,6 +9,9 @@ Esta presentación habla sobre la librería Polymer y todas sus características
 * [Repositorio donde se guarda la información sobre Polymer](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/tree/master/txt/polymer)
 * [Repositorio donde se muestra información sobre todos los proyectos expuestos en la asignatura](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos)
 
+## Enlace a la presentación en Heroku 
+* [Presentación en Heroku](https://presentacion-polymer-sytw.herokuapp.com)
+
 ### Autor de la presentación
 
 [Pedro Manuel Ramos Rodríguez](http://alu0100505078.github.io/)
